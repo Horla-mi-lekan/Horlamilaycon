@@ -1,0 +1,291 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@media (min-width: 0rem){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Add box-sizing to include padding and borders in element widths */
+    }
+}
+body{
+    width: 100%;
+    height: 95vh;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+@media (min-width: 0rem){
+    body {
+        width: 100%;
+        height: 100vh; /* Adjusted to take up the full viewport height */
+        background-color: white;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column; /* Adjusted to stack content vertically on small screens */
+        justify-content: center;
+        align-items: center; /* Horizontally center content */
+        padding: 20px; /* Added padding for spacing on small screens */
+    }    
+} 
+.container{
+    width: 100%;
+    height: 93vh;
+    border: 1px solid black; 
+    text-align: center;
+}
+@media (min-width: 0rem){
+    .container {
+        width: 100%; /* Adjusted to make it more mobile-friendly */
+        max-width: 400px; /* Added a max-width to prevent it from becoming too wide on smaller screens */
+        background: linear-gradient(to bottom left, rgb(163, 163, 220), rgb(238, 187, 195), rgb(163, 163, 220));
+        height: auto; /* Removed fixed height for mobile */       
+        text-align: center;
+        margin: 10px 0; /* Adjusted margin for mobile */
+        border-radius: 5px; /* Added border radius for a softer look */
+    }   
+}
+h1{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+    margin-top: 10px;
+    cursor: pointer;
+}
+@media (min-width: 0rem){    
+h1 {
+    font-size: 24px; /* Reduced font size for mobile */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+    margin-top: 10px;
+    cursor: pointer;
+}
+}
+.Delay{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media (min-width: 0rem){
+    .Delay {
+        display: flex;
+        flex-direction: row; /* Changed to column layout for mobile */
+        margin-top: 10px;
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center; /* Center align text for mobile */
+    }    
+}
+.attach{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    border: 1px solid black;
+    background: url("/Images/Alaye.jpeg.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+@media (min-width: 0rem){
+    .attach {
+        width: 100%; /* Make the image container full-width */
+        height: auto; /* Removed fixed height for mobile */
+        display: flex;
+        flex-direction: column; /* Changed to column layout for mobile */
+        margin-top: 10px;
+        border: 1px solid black;
+        background: url("/Images/Alaye.jpeg.jpeg");
+        background-size: cover;
+        background-position: center;
+        align-items: center; /* Center align content horizontally */
+        border-radius: 5px; /* Added border radius for a softer look */
+    }    
+}
+.attach div{
+    flex: 1;
+    border: 1px solid black;
+}
+@media (min-width: 0rem){
+   .attach div{
+    flex: 1;
+    border: 1px solid black;
+    width: 100%;
+   }
+}
+h3{
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin-top: 10px;
+}
+@media (min-width: 0rem){
+    h3 {
+        font-size: 18px; /* Reduced font size for mobile */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        margin-top: 10px;
+        text-align: center; /* Center align text for mobile */        
+    }    
+}
+.button-family{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+@media (min-width: 0rem){
+    .button-family {
+        display: flex;
+        flex-direction: column; /* Changed to column layout for mobile */
+        margin-top: 10px;
+        align-items: center;
+    }
+}
+.btn1{
+    width: 150px;
+    height: 40px;
+    background-color: blue;
+    box-shadow: 0px 6px 10px rgba(44, 45, 44, .8);
+    border: 1px solid blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media (min-width: 0rem){
+    .btn1 {
+        width: 80%; /* Make the buttons full-width */
+        height: 40px;
+        margin-top: 10px; /* Adjusted margin for mobile */
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center; /* Center align text for mobile */
+    }
+}
+.btn2{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    box-shadow: 0px 6px 10px rgba(44, 45, 44, .8);
+    border: 1px solid red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media (min-width: 0rem){
+    .btn2 {
+        width: 40%; /* Make the buttons full-width */
+        height: 40px;
+        margin-top: 10px; /* Adjusted margin for mobile */
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center; /* Center align text for mobile */
+    }
+}
+.btn3{
+    width: 150px;
+    height: 40px;
+    background-color: green;
+    box-shadow: 0px 6px 10px rgba(44, 45, 44, .8);
+    border: 1px solid green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media (min-width: 0rem){
+    .btn3 {
+        width: 80%; /* Make the buttons full-width */
+        height: 40px;
+        margin-top: 10px; /* Adjusted margin for mobile */
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center; /* Center align text for mobile */
+    }
+}
+.Timetable{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+@media (min-width: 0rem){
+.Timetable {
+    display: flex;
+    flex-direction: column; /* Changed to column layout for mobile */
+    margin-top: 30px;
+}
+
+}
+table{
+    border: 1px solid black;
+    padding: 5px;
+}
+@media( min-width: 0rem){
+    table {
+        border: 1px solid black;
+        padding: 5px;
+        width: 100%; /* Make the table full-width */
+    }
+}
+table th{
+    border: 1px solid black;
+    padding: 5px;
+}
+table td{
+    border: 1px solid black;
+    padding: 5px;
+}
+img{
+    width: 100px;
+    height: 120px;
+    padding: 10px;
+}
+@media (min-width: 0rem){
+    img {
+        width: 50px;
+        height: 60px;
+        padding: 10px;
+    }
+    
+}
+.Log-out{
+    width: 100px;
+    height: 40px;
+    background-color:rgba(156, 156, 156, .3);
+    box-shadow: 0px 6px 10px rgba(44, 45, 44, .8);
+    border: 1px solid rgba(156, 156, 156, .3);
+    color: rgb(102, 102, 102);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 50px;
+}
+@media (min-width: 0rem){
+    .Log-out {
+        width: 100%; /* Make the log-out button full-width */
+        height: 40px;
+        margin-top: 20px; /* Adjusted margin for mobile */
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center; /* Center align text for mobile */
+    }
+}

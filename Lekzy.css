@@ -1,0 +1,211 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@media (min-width: 0rem){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Add box-sizing to include padding and borders in element widths */
+    }
+}
+body{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(to bottom left, rgb(163, 163, 220), rgb(238, 187, 195), rgb(163, 163, 220));
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;   
+}
+@media (min-width: 0rem){
+    body {
+        width: 100%;
+        height: 100vh; /* Adjusted to take up the full viewport height */
+        background: linear-gradient(to bottom left, rgb(163, 163, 220), rgb(238, 187, 195), rgb(163, 163, 220));
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column; /* Adjusted to stack content vertically on small screens */
+        align-items: center; /* Horizontally center content */
+        justify-content: center;
+        padding: 10px; /* Added padding for spacing on small screens */
+    }
+}
+.container{
+    width: 100%;       
+    text-align: center;
+    background-color: rgba(156, 156, 156, .3);
+    box-shadow: 6px 10px 10px rgba(156, 156, 156, .8);
+    padding: 16px;
+    margin: 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+@media (min-width: 0rem){
+    .container {
+        width: 100%;
+        max-width: 25rem; /* Added a max-width to prevent it from becoming too wide on smaller screens */
+        height: 105%;        
+        text-align: center;
+        background-color: rgba(156, 156, 156, .3);
+        box-shadow: 6px 10px 10px rgba(156, 156, 156, .8);
+        padding: 16px;
+        margin: 8px;
+        border-radius: 5px; /* Added border radius for a softer look */         
+    }
+}
+h1{
+    width: 100%;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(103, 100, 100);
+    margin-top: 60px;
+    text-shadow: 0px 6px 10px rgba(31, 32, 32, 0.7);
+    cursor: pointer;
+}
+@media (min-width: 0rem){
+    h1 {
+        font-size: 24px; /* Reduced font size for mobile */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(103, 100, 100);
+        margin-top: 20px; /* Adjusted top margin for mobile */
+        text-shadow: 0px 3px 5px rgba(31, 32, 32, 0.7);
+        cursor: pointer;
+    }
+    
+}
+
+.Email{
+    width: 60%;
+    height: 40px;
+    background-color: rgba(156, 156, 156, .3);
+    margin-top: 10px;
+    border: rgba(156, 156, 156, .3);
+    outline: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    color: rgb(45, 44, 44);
+    padding-left: 10px;
+}
+@media (min-width: 0rem){
+    .Email {
+        width: 100%; /* Make the input fields full-width */
+        height: 40px;
+        background-color: rgba(156, 156, 156, .3);
+        margin-top: 10px;
+        border: none; /* Removed border for a cleaner look */
+        outline: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        color: rgb(45, 44, 44);
+        padding-left: 20px;
+    }
+}
+.Password{
+    width: 60%;
+    height: 40px;
+    background-color: rgba(156, 156, 156, .3);
+    margin-top: 20px;
+    border: rgba(156, 156, 156, .3);
+    outline: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    color: rgb(45, 44, 44);
+    padding-left: 10px;
+}
+@media (min-width: 0rem){
+    .Password {
+        width: 100%; /* Make the input fields full-width */
+        height: 40px;
+        background-color: rgba(156, 156, 156, .3);
+        margin-top: 10px;
+        border: none; /* Removed border for a cleaner look */
+        outline: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        color: rgb(45, 44, 44);
+        padding-left: 20px;
+    }
+}
+::placeholder{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(45, 44, 44);
+}
+.Limit{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(45, 44, 44);
+}
+@media (min-widt: 0rem){
+    .Limit {
+        text-decoration: none;
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        color: rgb(45, 44, 44);
+        display: block; /* Ensure the "Limit" text is on its own line */
+        margin-top: 5px; /* Adjusted margin for mobile */
+    }
+}
+p{
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p a{
+    text-decoration: none;
+    font-size: 12px;
+}
+.btn1{
+    width: 60%;
+    height: 40px;
+    background-color: rgba(156, 156, 156, .3);
+    box-shadow: 0px 6px 10px rgba(44, 45, 44, .3);
+    border: rgba(156, 156, 156, .3);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 60px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media (min-width: 0rem){
+    .btn1 {
+        width: 100%; /* Make the button full-width */
+        height: 40px;
+        background-color: rgba(156, 156, 156, .3);
+        box-shadow: 0px 3px 5px rgba(44, 45, 44, .3);
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 40px; /* Adjusted margin for mobile */
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+.btn1:hover{
+    background-color:  rgba(156, 156, 156, .7);
+    transition: 0.5ms ease-in-out;
+    color: rgb(45, 44, 44);
+}
+.Timzy{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;   
+    margin-top: 25px;  
+}
+@media (min-width: 0rem){
+    .Timzy {
+        font-size: 14px; /* Reduced font size for mobile */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: red;
+        margin-top: 15px; /* Adjusted margin for mobile */
+    }
+    
+}

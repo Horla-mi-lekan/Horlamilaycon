@@ -1,0 +1,273 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@media (min-width: 0rem){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Add box-sizing to include padding and borders in element widths */
+    }
+}
+body{
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(44, 45, 44, .3);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+@media (min-width: 0rem){
+    body {
+        width: 100%;
+        height: 100vh; /* Adjusted to take up the full viewport height */
+        background: linear-gradient(to bottom left, rgb(163, 163, 220), rgb(238, 187, 195), rgb(163, 163, 220));
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column; /* Adjusted to stack content vertically on small screens */
+        align-items: center; /* Horizontally center content */
+        justify-content: center;
+       /* padding: 10px; /* Added padding for spacing on small screens */
+    }
+}
+.container{
+    width: 30%;   
+    background: linear-gradient(to bottom left, rgb(192, 192, 208), rgb(192, 174, 177), rgb(192, 192, 208));
+    vertical-align: middle;      
+}
+@media (min-width: 0rem){
+    .container {
+        width: 100%;
+        max-width: 20rem; /* Added a max-width to prevent it from becoming too wide on smaller screens */                     
+        text-align: center;
+        background-color: rgba(156, 156, 156, .3);
+        box-shadow: 6px 10px 10px rgba(156, 156, 156, .8);
+        padding: 16px;
+        margin: 8px;
+        border-radius: 5px; /* Added border radius for a softer look */         
+    }
+}
+h1{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+    margin-top: 40px;
+    text-shadow: 0px 6px 10px rgba(44, 45, 44, .6);
+}
+@media (min-width: 0rem){
+    h1 {
+        font-size: 24px; /* Reduced font size for mobile */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: green;
+        margin-top: 20px; /* Adjusted top margin for mobile */
+        text-shadow: 0px 3px 5px rgba(31, 32, 32, 0.7);
+        cursor: pointer;
+    }
+    
+}
+.Surname{
+    width: 60%;
+    height: 40px;
+    background-color: rgba(230, 207, 210, .3);
+    border: 1px solid rgba(230, 207, 210, .3);
+    margin-top: 10px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(110, 109, 109);
+}
+@media (min-width: 0rem){
+    .Surname{
+        width: 100%; /* Make the input fields full-width */
+        height: 40px;
+        background-color: rgba(230, 207, 210, .3);
+        margin-top: 10px;
+        border: none; /* Removed border for a cleaner look */
+        outline: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        color: rgb(45, 44, 44);
+        padding-left: 20px;
+    }
+}
+.MiddleName{
+    width: 60%;
+    height: 40px;
+    background-color: rgba(230, 207, 210, .3);
+    border: 1px solid rgba(230, 207, 210, .3);
+    margin-top: 20px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(110, 109, 109);
+}
+@media (min-width: 0rem){
+    .MiddleName{
+        width: 100%; /* Make the input fields full-width */
+        height: 40px;
+        background-color: rgba(230, 207, 210, .3);
+        margin-top: 10px;
+        border: none; /* Removed border for a cleaner look */
+        outline: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        color: rgb(45, 44, 44);
+        padding-left: 20px;
+    }
+}
+.LastName{
+    width: 60%;
+    height: 40px;
+    background-color: rgba(230, 207, 210, .3);
+    border: 1px solid rgba(230, 207, 210, .3);
+    margin-top: 20px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(110, 109, 109);
+}
+@media (min-width: 0rem){
+    .LastName{
+        width: 100%; /* Make the input fields full-width */
+        height: 40px;
+        background-color: rgba(230, 207, 210, .3);
+        margin-top: 10px;
+        border: none; /* Removed border for a cleaner look */
+        outline: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        color: rgb(45, 44, 44);
+        padding-left: 20px;
+    }
+}
+.Email{
+    width: 60%;
+    height: 40px;
+    background-color: rgba(230, 207, 210, .3);
+    border: 1px solid rgba(230, 207, 210, .3);
+    margin-top: 20px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(110, 109, 109);
+}
+@media (min-width: 0rem){
+    .Email{
+        width: 100%; /* Make the input fields full-width */
+        height: 40px;
+        background-color: rgba(230, 207, 210, .3);
+        margin-top: 10px;
+        border: none; /* Removed border for a cleaner look */
+        outline: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        color: rgb(45, 44, 44);
+        padding-left: 20px;
+    }
+}
+.Password{
+    width: 60%;
+    height: 40px;
+    background-color: rgba(230, 207, 210, .3);
+    border: 1px solid rgba(230, 207, 210, .3);
+    margin-top: 20px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(110, 109, 109);
+}
+@media (min-width: 0rem){
+    .Password{
+        width: 100%; /* Make the input fields full-width */
+        height: 40px;
+        background-color: rgba(230, 207, 210, .3);
+        margin-top: 10px;
+        border: none; /* Removed border for a cleaner look */
+        outline: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        color: rgb(45, 44, 44);
+        padding-left: 20px;
+    }
+}
+.ConfirmPassword{
+    width: 60%;
+    height: 40px;
+    background-color: rgba(230, 207, 210, .3);
+    border: 1px solid rgba(230, 207, 210, .3);
+    margin-top: 20px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(110, 109, 109);
+}
+@media (min-width: 0rem){
+    .ConfirmPassword{
+        width: 100%; /* Make the input fields full-width */
+        height: 40px;
+        background-color: rgba(230, 207, 210, .3);
+        margin-top: 10px;
+        border: none; /* Removed border for a cleaner look */
+        outline: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        color: rgb(45, 44, 44);
+        padding-left: 20px;
+    }
+}
+::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(110, 109, 109);   
+}
+.btn2{
+    width: 60%;
+    height: 40px;
+    background-color: green;
+    box-shadow: 0px 6px 10px rgba(44, 45, 44, .8);
+    border: 1px solid green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 60px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (min-width: 0rem){
+    .btn2 {
+        width: 100%; /* Make the button full-width */
+        height: 40px;
+        background-color: green;
+        box-shadow: 0px 6px 10px rgba(44, 45, 44, .8);
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 40px; /* Adjusted margin for mobile */
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+h2{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;   
+    margin-top: 25px;  
+}
+@media (min-width: 0rem){
+    h2{
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: blue;   
+        margin-top: 25px;  
+    }
+}
